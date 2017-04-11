@@ -68,7 +68,7 @@ def ALSscore(ALSscore):
     for i in arr:
         listp.append(df.iloc[i][0])
         listd.append(df.iloc[i][6])
-        listv.append(df.iloc[i+1][6].replace(' ',''))
+        listv.append(df.iloc[i+1][6].strip())
     df1 = pd.DataFrame({'AP':listp, 'D':listd, 'V':listv})
     
     # Remove empty strings and non-numeric
