@@ -46,7 +46,7 @@ In the whole analysis, we applied Pandas Dataframe and grouped all noisy data by
 ## II. Feature Engineering & Data Cleaning
 a. Progression rate picture:   
    <p align="center">
-   <img src="Figure/ALSProgressionpng.png" width="100%"/>
+   <img src="Figure/ALSProgressionpng.png" width="80%"/>
    </p>
 
 
@@ -97,28 +97,5 @@ We eventually generated a (5372 * 134) dataframe with 5372 patients and 134 feat
 1. Clinical data, esp. for rare disease like ALS, are extremely noisy with many missing data.
 2. Random Forest is optimal for study non-linear features in high-dimentional data.
 3. Open door to new predictive features like blood pressure, pulse and creatine kinase.
-
-
-## V. Figures
-
-<p align="center">
-  <img src="Figure/CrossValTrainDataPrediction.png" width="100%"/>
-</p>
-
-<p align="center">
-  <img src="Figure/CrossValTrainDataPrediction.png" width="100%"/>
-</p>
-
-
-<p align="center">
-  <img src="Figure/CrossValTrainDataPrediction.png" width="100%"/>
-</p>
-
-<p align="center">
-  <img src="Figure/CrossValTrainDataPrediction.png" width="100%"/>
-</p>
-
-
-
 
 
