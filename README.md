@@ -9,7 +9,7 @@
 <br>
 
 # Introduction
-We have ~5000000 lines of data about all features including demographics, clinical trial as well as lab test results for ~5000 ALS patients provided by PRO-ACT(Pooled Resource Open-Access ALS Clinical Trial Database).
+We have ~5000000 lines of data about all features including demographics, clinical trial as well as lab test results for ~5000 ALS patients provided by PRO-ACT(Pooled Resource Open-Access ALS Clinical Trial Database).<br>
 Clinically Progression Rate (PR) is very important feature for ALS patients, so our purpose here is to 
 predict PR based on available patient features.<br>
 
