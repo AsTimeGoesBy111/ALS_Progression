@@ -23,7 +23,9 @@ We have ~5000000 lines of data about all features including demographics, clinic
 
 ## Part of Data
 
-<code>
+```js
+var d3 = Object.assign({}, require("d3-format"), require("d3-geo"), require("d3-geo-projection"));
+
 89	144	Demographics	B17A1C73-0A2B-4091-842C-D5841EF339FD	1205	Sex	Male <br>
 329	144	Demographics	704CA13F-C1FA-49EC-A3BB-E6B00FA075FA	1205	Sex	Female <br>
 329	144	Demographics	704CA13F-C1FA-49EC-A3BB-E6B00FA075FA	1206	Race - American Indian/Alaska Native <br>
@@ -36,7 +38,8 @@ We have ~5000000 lines of data about all features including demographics, clinic
 329	146	Laboratory Data	1150FF83-DA3B-436E-B444-D1CA2A22E08C	1250	Test Name	Sodium  <br>
 329	146	Laboratory Data	1150FF83-DA3B-436E-B444-D1CA2A22E08C	1251	Test Result	138     <br>
 329	146	Laboratory Data	1150FF83-DA3B-436E-B444-D1CA2A22E08C	1252	Test Unit	mmol/L  <br>
-</code>
+
+```
 
 ## Analysis
 
