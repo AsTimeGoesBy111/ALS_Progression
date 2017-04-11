@@ -1,23 +1,3 @@
-ALS (Amyotrophic Lateral Sclerosis) is 
-
-
-##     Pipeline 
-##  Data Format
-
-
-Have a look at data????
-
-
-
-
-   
-   
-
-
-
-
-
-
 # ALS Data Trend Project
 
 <a href=""><img src="https://upload.wikimedia.org/wikipedia/en/e/ef/ALS_Association_logo.gif" align="left" hspace="10" vspace="6"></a>
