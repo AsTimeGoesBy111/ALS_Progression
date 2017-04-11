@@ -44,7 +44,7 @@ Features include Static Feature (sex, age) and Dynamic Feature(Sodium concentrat
 1. First calculate our target variable: Progression Rate (Delta Health score/Delta time).  
 
 2. Covert time-dependent dynamic features into static:
-   Derive least squares polynomial fit, and use k,b as new static feature.
+   Derive linear regression, and use k,b as new static feature.
    In case data points are too few for fit, we also reserve Max() and Min() as new feature.
 
 3. Convert character features into numeric (For example for 'Sex')
