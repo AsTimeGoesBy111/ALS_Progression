@@ -39,7 +39,6 @@ predict PR based on available patient features.<br>
 ## I. Overview 
 Features include Static Feature (sex, age) and Dynamic Feature(Sodium concentration change over time).<br>
 Our target variable Progression Rate is also dynamic (Delta Health score/Delta time). <br>
-In the whole analysis, we applied Pandas Dataframe and grouped all noisy data by patients.
 
 
 
