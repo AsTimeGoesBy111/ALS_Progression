@@ -37,25 +37,26 @@ def Dynamicfeature(dynamicfeature):
     df1 = pd.DataFrame({'AP':listp, 'D':listd, 'V':listv})
     
    
-    #Remove empty strings and non-numeric
+    # Remove empty strings and non-numeric
     df1 = df1.replace('',np.nan).dropna()
     df1 = df1[df1['D'].str.isnumeric()]
     df1 = df1[df1['V'].str.isnumeric()]
     
     
-    #Transform time-dependent feature into static(linear regression)
-    #First group data by patients
+    # Transform time-dependent feature into static(linear regression)
+    # First group data by patients
     dicd = {k: list(v) for k,v in df1.groupby('AP')['D']}
     dicv = {k: list(v) for k,v in df1.groupby('AP')['V']}
     dic = {}
     
     for j in dicd:
         x = [float(a) for a in dicd[j]]
-        y = [float(a) for a in dicv[j]]
-          if all(v == 0 for v in x) is False:
+        y = [float(a) for a in dicv[j]] 
+          if all(v == 0 for v in x) is False:    
           k,b = np.polyfit(x, y, 1)
           ave = sum(y)/float(len(y))
-          #Data could be insufficent to derive regression
+          #Data could be insufficent to derive regression, 
+          #so in addition to k,b, max(y)/min(y) included
           dic[j] = [max(x),k,b,min(y),max(y),ave]
     
     df2 = pd.DataFrame.from_dict(dic, orient='index').reset_index()
