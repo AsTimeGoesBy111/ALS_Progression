@@ -10,6 +10,8 @@
 
 # Introduction
 We have ~5000000 lines of data about all features including demographics, clinical trial as well as lab test results for ~5000 ALS patients provided by PRO-ACT(Pooled Resource Open-Access ALS Clinical Trial Database).
+Clinically Progression Rate (PR) is very important feature for ALS patients, so our purpose here is to 
+predict PR based on available patient features.<br>
 
 
 
@@ -37,8 +39,6 @@ We have ~5000000 lines of data about all features including demographics, clinic
 ## I. Overview 
 Features include Static Feature (sex, age) and Dynamic Feature(Sodium concentration change over time).<br>
 Our target variable Progression Rate is also dynamic (Delta Health score/Delta time). <br>
-Clinically Progression Rate (PR) is very important feature for ALS patients, so our purpose here is to 
-predict PR based on available patient features.<br>
 In the whole analysis, we applied Pandas Dataframe and grouped all noisy data by patients.
 
 
