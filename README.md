@@ -34,7 +34,7 @@ We have ~5000000 lines of data about all features including demographics, clinic
 
 # Analysis
 
-## I. Features Overview 
+## I. Overview 
 Features include Static Feature (sex, age) and Dynamic Feature(Sodium concentration change over time).
 Dynamic feature. Our target variable Progression Rate is also dynamic (Delta Health score/Delta time).
 Clinically Progression Rate (PR) is very important feature for ALS patients, so our purpose here is to 
