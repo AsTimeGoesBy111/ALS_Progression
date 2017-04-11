@@ -82,21 +82,10 @@ We eventually generated a (5372 * 134) dataframe with 5372 patients and 134 feat
 3. Open door to new predictive features like blood pressure, pulse and creatine kinase.
 
 
-
-For the minified version:
-
-```html
-<script src="https://d3js.org/d3.v4.min.js"></script>
-```
-
-You can also use the standalone D3 microlibraries. For example, [d3-selection](https://github.com/d3/d3-selection):
+## V. Figures
+<a href=""><img src="" align="center"></a>
 
 
 
-You can also require individual modules and combine them into a `d3` object using [Object.assign](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign):
-
-```js
-var d3 = Object.assign({}, require("d3-format"), require("d3-geo"), require("d3-geo-projection"));
-```
 
 
