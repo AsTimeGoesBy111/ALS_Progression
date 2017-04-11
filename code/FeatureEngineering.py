@@ -5,7 +5,7 @@ import numpy as np
 def Staticfeature(staticfeature):
     arr=df[(df.iloc[:, 5] == staticfeature)].index.values
     
-    #Extract all data about this feature
+    # Extract all data about this feature
     listp,listd,listv = ([] for i in range(3))
     for i in arr:
         # Whitespace means NO for some feature, set as 0
@@ -27,7 +27,7 @@ def Staticfeature(staticfeature):
 def Dynamicfeature(dynamicfeature):
     arr=df[(df.iloc[:, 6] == dynamicfeature)].index.values
     
-    #Extract all data about this feature
+    # Extract all data about this feature
     listp,listd,listv = ([] for i in range(3))
     for i in arr:
         listp.append(df.iloc[i][0])
@@ -71,7 +71,7 @@ def Dynamicfeature(dynamicfeature):
 
 def ALSscore(ALSscore):
     arr=df[(df.iloc[:, 5] == ALSscore)].index.values
-    #Extract all data about this feature
+    # Extract all data about this feature
     listp,listd,listv = ([] for i in range(3))
     for i in arr:
         listp.append(df.iloc[i][0])
@@ -79,12 +79,12 @@ def ALSscore(ALSscore):
         listv.append(df.iloc[i+1][6].replace(' ',''))
     df1 = pd.DataFrame({'AP':listp, 'D':listd, 'V':listv})
     
-    #Remove empty strings and non-numeric
+    # Remove empty strings and non-numeric
     df1 = df1.replace('',np.nan).dropna()
     df1 = df1[df1['D'].str.isnumeric()]
     df1 = df1[df1['V'].str.isnumeric()]
     
-    #Transform time-dependent feature into static(linear regression)
+    # Transform time-dependent feature into static(linear regression)
     dicd = {k: list(v) for k,v in df1.groupby('AP')['D']}
     dicv = {k: list(v) for k,v in df1.groupby('AP')['V']}
     dic = {}
@@ -102,14 +102,14 @@ def ALSscore(ALSscore):
 
 
 
-#Read csv file of raw clinical data.
+# Read csv file of raw clinical data.
 df = pd.read_csv("/Users/Guang/Downloads/PRO-ACT/team1/5million.txt",header=None,names=['first'])
 df=df['first'].str.split('|', 6, expand=True)
 
 
 
 
-#Obtain dataframe for static features
+# Obtain dataframe for static features
 dfOnset = Staticfeature('Onset Delta')
 dfDiagnosis = Staticfeature('Diagnosis Delta')
 dfLimb = Staticfeature('Site of Onset - Limb')
@@ -140,7 +140,7 @@ dfRaceOther = Staticfeature('Race - Other')
 
 
 
-#Obtain dataframe for dynamic/time-dependent features
+# Obtain dataframe for dynamic/time-dependent features
 dfUrinePh = Dynamicfeature('Urine Ph')
 dfUrineProtein = Dynamicfeature('Urine Protein')
 dfUrineGlucose = Dynamicfeature('Urine Glucose')
@@ -178,13 +178,13 @@ dfAmylase = Dynamicfeature('Amylase')
 
 
 
-#Obtain the rate of progression of ALS patients
+# Obtain the rate of progression of ALS patients
 dfALSscore = ALSscore('ALSFRS Delta')
 
 
 
 
-#Merge dataframes for all static features 
+# Merge dataframes for all static features 
 df_sta = dfOnset.merge(dfDiagnosis,on='Name', how='outer').merge(dfLimb,on='Name', how='outer').merge(dfBulbar,on='Name', how='outer').merge(
          dfFamily,on='Name', how='outer').merge(dfAunt,on='Name', how='outer').merge(dfCousin,on='Name', how='outer').merge(
          dfFather,on='Name', how='outer').merge(dfGrandfather,on='Name', how='outer').merge(
@@ -196,13 +196,13 @@ df_sta = dfOnset.merge(dfDiagnosis,on='Name', how='outer').merge(dfLimb,on='Name
          dfRaceCaucasian,on='Name', how='outer').merge(dfRaceOther,on='Name', how='outer')
 
 
-#Convert character features into numeric features
+# Convert character features into numeric features
 df_sta['Sex'] = df_sta['Sex'].map( {'Female': 0, 'Male': 1} ).astype(int) 
  
 
 
 
-#Merge dataframes for all dynamic features 
+# Merge dataframes for all dynamic features 
 df_lab = dfUrinePh.merge(dfUrineProtein,on='Name', how='outer').merge(dfUrineGlucose,on='Name', how='outer').merge(
          dfAlbumin,on='Name', how='outer').merge(dfProtein,on='Name', how='outer').merge(dfSodium,on='Name', how='outer').merge(
          dfPotassium,on='Name', how='outer').merge(dfBicarbonate,on='Name', how='outer').merge(dfChloride,on='Name', how='outer').merge(
@@ -217,22 +217,22 @@ df_lab = dfUrinePh.merge(dfUrineProtein,on='Name', how='outer').merge(dfUrineGlu
 
 
 
-#Further merge
+# Further merge
 df_final = df_sta.merge(df_lab, on='Name', how='outer').merge(dfALSscore, on='Name', how='outer')
 
 
 
-#Remove columns that have two many NaN.
+# Remove columns that have two many NaN.
 df_final = df_final.loc[:, df_final.isnull().mean() <= 0.5]
 
 
 
-#Fill in NaN with median of the column.
+# Fill in NaN with median of the column.
 for i in df_final.columns:
     df_final[i]=df_final[i].fillna(df_final[i].median()) 
 
 
-#Save to csv.  
+# Save to csv.  
 df_final.to_csv('/Users/Guang/Downloads/df_final_5Mnew.txt', sep='\t')
 
 
