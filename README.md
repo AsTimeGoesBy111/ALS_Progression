@@ -77,7 +77,7 @@ We eventually generated a (5372 * 134) dataframe with 5372 patients and 134 feat
    We applied RandomForestRegressor to train data. And from this model, the top important features
    include Onset delta, systolic blood pressure, pulse, Sodium and creatine kinase.
    <p align="center">
-   <img src="Figure/FeatureImportance.png" width="70%"/>
+   <img src="Figure/FeatureImportance.png" height="50%" width="60%"/>
    </p>
 
 
@@ -85,7 +85,7 @@ We eventually generated a (5372 * 134) dataframe with 5372 patients and 134 feat
    The correlation coefficient between predicted and real Progression Rate are 0.46 and 0.65 for 
    cross validation data and test data, respectively.
    <p align="center">
-   <img src="Figure/CrossValTrainDataPrediction.png" width="70%"/>
+   <img src="Figure/CrossValTrainDataPrediction.png" width="80%"/>
    </p>
    
    <p align="center">
