@@ -59,11 +59,11 @@ c. Convert character features into numeric (For example for 'Sex')
 d. Merge multiple dataframes and drop features(columns) containing NaN in >50% of its cells. 
    For remaining NaN we fill in with median of that column.
 
-We eventually generated a (5372 * 134) dataframe with 5372 patients and 134 features.
+e. We eventually generated a (5372 * 134) dataframe with 5372 patients and 134 features.
 
 
 
-## III. Model: Random Forest training
+## III. Model Selection: Random Forest training
 1. Feature correlation
    Some features are highly correlated, for example, Sodium and Chloride concentration, 
    also ALT(SGPT) and AST(SGOT),two aminotransferases enzymes.
