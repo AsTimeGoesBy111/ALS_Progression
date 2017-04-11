@@ -65,6 +65,7 @@ In the whole analysis, we applied Pandas Dataframe and grouped all noisy data by
 
 ## III. Model Selection: Random Forest Regression
 1. Feature correlation
+
    Some features are highly correlated, for example, Sodium and Chloride concentration, 
    also ALT(SGPT) and AST(SGOT),two aminotransferases enzymes.
    Some correlated features are interesting, such as platelets count and pulse.
@@ -74,6 +75,7 @@ In the whole analysis, we applied Pandas Dataframe and grouped all noisy data by
    </p>
 
 2. RandomForestRegressor 
+
    We applied RandomForestRegressor to train data. And from this model, the top important features
    include Onset delta, systolic blood pressure, pulse, Sodium and creatine kinase.
    <p align="center">
@@ -82,6 +84,7 @@ In the whole analysis, we applied Pandas Dataframe and grouped all noisy data by
 
 
 3. Prediction using Cross-Validated and test data
+
    The correlation coefficient between predicted and real Progression Rate are 0.46 and 0.65 for 
    cross validation data and test data, respectively.
    <p align="center">
