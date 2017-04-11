@@ -44,22 +44,22 @@ In the whole analysis, we applied Pandas Dataframe and grouped all noisy data by
 
 
 ## II. Feature Engineering & Data Cleaning
-a. Progression rate picture:   
+1. Progression rate picture:   
    <p align="center">
    <img src="Figure/ALSProgressionpng.png" width="80%"/>
    </p>
 
 
-b. Covert time-dependent dynamic features into static:
+2. Covert time-dependent dynamic features into static:
    Derive least squares polynomial fit, and use k,b as new static feature.
    In case data points are too few for fit, we also reserve Max() and Min() as new feature.
 
-c. Convert character features into numeric (For example for 'Sex')
+3. Convert character features into numeric (For example for 'Sex')
 
-d. Merge multiple dataframes and drop features(columns) containing NaN in >50% of its cells. 
+4. Merge multiple dataframes and drop features(columns) containing NaN in >50% of its cells. 
    For remaining NaN we fill in with median of that column.
 
-e. We eventually generated a (5372 * 134) dataframe with 5372 patients and 134 features.
+5. We eventually generated a (5372 * 134) dataframe with 5372 patients and 134 features.
 
 
 
