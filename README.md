@@ -59,18 +59,18 @@ We eventually generated a (5372 * 134) dataframe with 5372 patients and 134 feat
 
 
 ## 3. Random Forest training
-a. Feature correlation
+1. Feature correlation
    Some features are highly correlated, for example, Sodium and Chloride concentration, 
    also ALT(SGPT) and AST(SGOT),two aminotransferases enzymes.
    Some correlated features are interesting, such as platelets count and pulse.
    Figure????
 
-b. RandomForestRegressor 
+2. RandomForestRegressor 
    We applied RandomForestRegressor to train data. And from this model, the top important features
    include Onset delta, systolic blood pressure, pulse, Sodium and creatine kinase.
    important feature figures?????
 
-c. Prediction using Cross-Validated and test data
+3. Prediction using Cross-Validated and test data
    The correlation coefficient between predicted and real Progression Rate are 0.46 and 0.65 for 
    cross validation data and test data, respectively.
    two figures?????
