@@ -17,7 +17,8 @@ def Staticfeature(staticfeature):
     
     df1 = pd.DataFrame({'Name':listp, staticfeature:listv})
     return df1
-       
+   
+   
 def Dynamicfeature(dynamicfeature):
     arr=df[(df.iloc[:, 6] == dynamicfeature)].index.values
     
@@ -57,6 +58,7 @@ def Dynamicfeature(dynamicfeature):
 
     df2.columns = ['Name',lf+'_Dmax',lf+'_k',lf+'_b',lf+'_Vmin',lf+'_Vmax',lf+'_Vave']
     return df2
+
 
 
 def ALSscore(ALSscore):
