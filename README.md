@@ -8,12 +8,12 @@
 
 <br>
 
-## Data Introduction
+# Data Introduction
 We have ~5000000 lines of data about all features including demographics, clinical trial as well as lab test results for ~5000 ALS patients provided by PRO-ACT(Pooled Resource Open-Access ALS Clinical Trial Database).
 
 
 
-## Data Snippet
+# Data Snippet
 
 ```js
 
@@ -32,9 +32,9 @@ We have ~5000000 lines of data about all features including demographics, clinic
 
 ```
 
-## Analysis
+# Analysis
 
-# 1. Features include Static Feature (sex, age) and Dynamic Feature(Sodium concentration change over time).
+## 1. Features include Static Feature (sex, age) and Dynamic Feature(Sodium concentration change over time).
 Dynamic feature. Our target variable Progression Rate is also dynamic (Delta Health score/Delta time).
 Clinically Progression Rate (PR) is very important feature for ALS patients, so our purpose here is to 
 predict PR based on available patient features.
@@ -42,7 +42,7 @@ In the whole analysis, we applied Pandas Dataframe and grouped all noisy data by
 
 
 
-# 2. Feature engineering and Data cleaning
+## 2. Feature engineering and Data cleaning
 a. Progression rate picture:
 b. Covert time-dependent dynamic features into static:
    Derive least squares polynomial fit, and use k,b as new static feature.
@@ -57,7 +57,7 @@ We eventually generated a (5372 * 134) dataframe with 5372 patients and 134 feat
 
 
 
-# 3. Random Forest training
+## 3. Random Forest training
 a. Feature correlation
    Some features are highly correlated, for example, Sodium and Chloride concentration, 
    also ALT(SGPT) and AST(SGOT),two aminotransferases enzymes.
@@ -75,8 +75,8 @@ c. Prediction using Cross-Validated and test data
    two figures?????
    
    
-# 4.Discussion
-a.Clinical data, esp. for rare disease like ALS, are extremely noisy with many missing data.
+## 4.Discussion
+a. Clinical data, esp. for rare disease like ALS, are extremely noisy with many missing data.
 b.Random Forest is optimal for study non-linear features in high-dimentional data.
 c.Open door to new predictive features like blood pressure, pulse and creatine kinase.
 
