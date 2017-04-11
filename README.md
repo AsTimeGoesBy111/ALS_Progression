@@ -7,7 +7,7 @@ ALS (Amyotrophic Lateral Sclerosis) is a fatal motor neuron disease with substan
 1. Data introduction
 We have ~5000000 lines of data about all features including demographics, clinical trial as well as lab test results for ~5000 ALS patients provided by PRO-ACT(Pooled Resource Open-Access ALS Clinical Trial Database).
 
-Have a look at data?
+Have a look at data????
 
 89	144	Demographics	B17A1C73-0A2B-4091-842C-D5841EF339FD	1205	Sex	Male
 329	144	Demographics	704CA13F-C1FA-49EC-A3BB-E6B00FA075FA	1205	Sex	Female
@@ -23,17 +23,26 @@ Have a look at data?
 329	146	Laboratory Data	1150FF83-DA3B-436E-B444-D1CA2A22E08C	1252	Test Unit	mmol/L
 
 
+Features include Static Feature (sex, age) and Dynamic Feature(Sodium concentration change over time).
+Dynamic feature. Our target variable Progression Rate is also dynamic (Delta Health score/Delta time).
+Clinically Progression Rate (PR) is very important feature for ALS patients, so our purpose here is to 
+predict PR based on available patient features.
+In the whole analysis, we applied Pandas Dataframe and grouped all noisy data by patients.
+
+
+
 2. Feature engineering and Data cleaning
-Static feature (show code)
-Dynamic feature
-Progression Rate(dong tu)
+a. Progression rate picture:
+b. Covert time-dependent dynamic features into static:
+   Derive least squares polynomial fit, and use k,b as new static feature.
+   In case data points are too few for fit, we also reserve Max() and Min() as new feature.
+   Code here????
+c. Convert character features into numeric (For example for 'Sex')
+d. Merge multiple dataframes and remove features(columns) containing NaN in >50% of its cells. 
+   For remaining NaN we fill in with median of that column.
+   code here????
 
-character features into numeric features
-Merge df
-Remove features with too many NaN
-Then fill lin remaining NaN with median of that feature
-
-(5372*134)
+We eventually generated a (5372 * 134) dataframe with 5372 patients and 134 features.
 
 
 3. Random Forest training
