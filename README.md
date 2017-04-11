@@ -38,17 +38,38 @@ b. Covert time-dependent dynamic features into static:
    In case data points are too few for fit, we also reserve Max() and Min() as new feature.
    Code here????
 c. Convert character features into numeric (For example for 'Sex')
-d. Merge multiple dataframes and remove features(columns) containing NaN in >50% of its cells. 
+d. Merge multiple dataframes and drop features(columns) containing NaN in >50% of its cells. 
    For remaining NaN we fill in with median of that column.
    code here????
 
 We eventually generated a (5372 * 134) dataframe with 5372 patients and 134 features.
 
 
+
 3. Random Forest training
-Feature correlation
-Random Forest train--Important features
-cross validate and test results
+a. Feature correlation
+   Some features are highly correlated, for example, Sodium and Chloride concentration, 
+   also ALT(SGPT) and AST(SGOT),two aminotransferases enzymes.
+   Some correlated features are interesting, such as platelets count and pulse.
+   Figure????
+
+b. RandomForestRegressor 
+   We applied RandomForestRegressor to train data. And from this model, the top important features
+   include Onset delta, systolic blood pressure, pulse, Sodium and creatine kinase.
+   important feature figures?????
+
+c. Prediction using Cross-Validated and test data
+   The correlation coefficient between predicted and real Progression Rate are 0.46 and 0.65 for 
+   cross validation data and test data, respectively.
+   two figures?????
+   
+   
+4.Discussion
+a.Clinical data, esp. for rare disease like ALS, are extremely noisy with many missing data.
+b.Random Forest is optimal for study non-linear features in high-dimentional data.
+c.Open door to new predictive features like blood pressure, pulse and creatine kinase.
+   
+   
 
 
 
