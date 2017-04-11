@@ -83,7 +83,11 @@ We eventually generated a (5372 * 134) dataframe with 5372 patients and 134 feat
 
 
 ## V. Figures
-<a href=""><img src="Data/CrossValTrainDataPrediction.png" align="center"></a>
+
+<p align="center">
+  <img src="Data/CrossValTrainDataPrediction.png" width="350"/>
+  <img src="../Data/CrossValTrainDataPrediction.png" width="350"/>
+</p>
 
 
 
