@@ -8,23 +8,14 @@
 
 <br>
 
-## Data introduction
+## Data Introduction
 We have ~5000000 lines of data about all features including demographics, clinical trial as well as lab test results for ~5000 ALS patients provided by PRO-ACT(Pooled Resource Open-Access ALS Clinical Trial Database).
 
 
 
-## Data introduction
-We have ~5000000 lines of data about all features including demographics, clinical trial as well as lab test results for ~5000 ALS patients provided by PRO-ACT(Pooled Resource Open-Access ALS Clinical Trial Database).
-
-## Data Sample
-<code>
-89	144	Demographics	B17A1C73-0A2B-4091-842C-D5841EF339FD	1205	Sex	Male 329	144	Demographics	704CA13F-C1FA-49EC-A3BB-E6B00FA075FA	1205	Sex	Female 329	144	Demographics	704CA13F-C1FA-49EC-A3BB-E6B00FA075FA	1206	Race - American Indian/Alaska Native 329	144	Demographics	704CA13F-C1FA-49EC-A3BB-E6B00FA075FA	1207	Race - Asian 329	145	ALSFRS(R)	8F97FE2C-5B03-4491-AA3E-52883C47FCE6	1225	ALSFRS Delta 189 329	145	ALSFRS(R)	8F97FE2C-5B03-4491-AA3E-52883C47FCE6	1228	ALSFRS Total	25 329	145	ALSFRS(R) 31D06255-09B0-4265-9477-D872DC6DD78A	1225	ALSFRS Delta	212 329	145	ALSFRS(R)	31D06255-09B0-4265-9477-D872DC6DD78A	1228	ALSFRS Total	30 329	146	Laboratory Data	1150FF83-DA3B-436E-B444-D1CA2A22E08C	1234 Laboratory Delta	0 329	146	Laboratory Data	1150FF83-DA3B-436E-B444-D1CA2A22E08C	1250	Test Name	Sodium 329 146	Laboratory Data	1150FF83-DA3B-436E-B444-D1CA2A22E08C	1251	Test Result	138 329	146	Laboratory Data 1150FF83-DA3B-436E-B444-D1CA2A22E08C	1252	Test Unit	mmol/L
-</code>
-
-## Part of Data
+## Data Snippet
 
 ```js
-var d3 = Object.assign({}, require("d3-format"), require("d3-geo"), require("d3-geo-projection"));
 
 89	144	Demographics	B17A1C73-0A2B-4091-842C-D5841EF339FD	1205	Sex	Male <br>
 329	144	Demographics	704CA13F-C1FA-49EC-A3BB-E6B00FA075FA	1205	Sex	Female <br>
@@ -43,7 +34,7 @@ var d3 = Object.assign({}, require("d3-format"), require("d3-geo"), require("d3-
 
 ## Analysis
 
-1. Features include Static Feature (sex, age) and Dynamic Feature(Sodium concentration change over time).
+# 1. Features include Static Feature (sex, age) and Dynamic Feature(Sodium concentration change over time).
 Dynamic feature. Our target variable Progression Rate is also dynamic (Delta Health score/Delta time).
 Clinically Progression Rate (PR) is very important feature for ALS patients, so our purpose here is to 
 predict PR based on available patient features.
@@ -51,7 +42,7 @@ In the whole analysis, we applied Pandas Dataframe and grouped all noisy data by
 
 
 
-2. Feature engineering and Data cleaning
+# 2. Feature engineering and Data cleaning
 a. Progression rate picture:
 b. Covert time-dependent dynamic features into static:
    Derive least squares polynomial fit, and use k,b as new static feature.
@@ -66,7 +57,7 @@ We eventually generated a (5372 * 134) dataframe with 5372 patients and 134 feat
 
 
 
-3. Random Forest training
+# 3. Random Forest training
 a. Feature correlation
    Some features are highly correlated, for example, Sodium and Chloride concentration, 
    also ALT(SGPT) and AST(SGOT),two aminotransferases enzymes.
@@ -84,7 +75,7 @@ c. Prediction using Cross-Validated and test data
    two figures?????
    
    
-4.Discussion
+# 4.Discussion
 a.Clinical data, esp. for rare disease like ALS, are extremely noisy with many missing data.
 b.Random Forest is optimal for study non-linear features in high-dimentional data.
 c.Open door to new predictive features like blood pressure, pulse and creatine kinase.
@@ -106,10 +97,5 @@ You can also require individual modules and combine them into a `d3` object usin
 ```js
 var d3 = Object.assign({}, require("d3-format"), require("d3-geo"), require("d3-geo-projection"));
 ```
-
-
-
-
-a fatal motor neuron disease with substantial heterogeneity in genomics as well as clinical features. ALS is usually very progressive with very short survival after onset. Here we applied machine learning approaches to predict rate of progression based on available clinical data for ~5000 patients.
 
 
