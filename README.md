@@ -80,11 +80,13 @@ c.Open door to new predictive features like blood pressure, pulse and creatine k
 
 <a href=""><img src="https://upload.wikimedia.org/wikipedia/en/e/ef/ALS_Association_logo.gif" align="left" hspace="10" vspace="6"></a>
 
-**ALS** (i.e **Amyotrophic Lateral Sclerosis**) is a fatal motor neuron disease with substantial heterogeneity in genomics as well as clinical features. ALS is usually very progressive with very short survival after onset. Here we applied machine learning approaches to predict rate of progression based on available clinical data for ~5000 patients.
+**ALS** (full name **Amyotrophic Lateral Sclerosis**) is a fatal motor neuron disease with substantial heterogeneity in genomics as well as clinical features. ALS is usually very progressive with very short survival after onset. Here we applied machine learning approaches to predict rate of progression based on available clinical data for ~5000 patients.
 
+
+
+<br>
 
 ## Installing
-
 If you use npm, `npm install d3`. Otherwise, download the [latest release](https://github.com/d3/d3/releases/latest). The released bundle supports anonymous AMD, CommonJS, and vanilla environments. You can load directly from [d3js.org](https://d3js.org), [CDNJS](https://cdnjs.com/libraries/d3), or [unpkg](https://unpkg.com/d3/). For example:
 
 ```html
