@@ -1,7 +1,6 @@
 import pandas as pd
 import numpy as np
 
-
 def Staticfeature(staticfeature):
     arr=df[(df.iloc[:, 5] == staticfeature)].index.values
     
@@ -14,16 +13,11 @@ def Staticfeature(staticfeature):
            listv.append('0')
         else:    
            listp.append(df.iloc[i][0])
-           listv.append(df.iloc[i][6].replace(' ',''))
+           listv.append(df.iloc[i][6].strip())
     
     df1 = pd.DataFrame({'Name':listp, staticfeature:listv})
     return df1
-   
-    
-
-    
-
-    
+       
 def Dynamicfeature(dynamicfeature):
     arr=df[(df.iloc[:, 6] == dynamicfeature)].index.values
     
@@ -32,11 +26,10 @@ def Dynamicfeature(dynamicfeature):
     for i in arr:
         listp.append(df.iloc[i][0])
         listd.append(df.iloc[i-1][6])
-        listv.append(df.iloc[i+1][6].replace(' ',''))
+        listv.append(df.iloc[i+1][6].strip())
     
     df1 = pd.DataFrame({'AP':listp, 'D':listd, 'V':listv})
-    
-   
+  
     # Remove empty strings and non-numeric
     df1 = df1.replace('',np.nan).dropna()
     df1 = df1[df1['D'].str.isnumeric()]
@@ -64,9 +57,6 @@ def Dynamicfeature(dynamicfeature):
 
     df2.columns = ['Name',lf+'_Dmax',lf+'_k',lf+'_b',lf+'_Vmin',lf+'_Vmax',lf+'_Vave']
     return df2
-
-
-
 
 
 def ALSscore(ALSscore):
@@ -100,13 +90,9 @@ def ALSscore(ALSscore):
     return df2
     
 
-
-
 # Read csv file of raw clinical data.
 df = pd.read_csv("/Users/Guang/Downloads/PRO-ACT/team1/5million.txt",header=None,names=['first'])
 df=df['first'].str.split('|', 6, expand=True)
-
-
 
 
 # Obtain dataframe for static features
@@ -136,7 +122,6 @@ dfRaceAsian = Staticfeature('Race - Asian')
 dfRaceBlack = Staticfeature('Race - Black/African American')
 dfRaceCaucasian = Staticfeature('Race - Caucasian')
 dfRaceOther = Staticfeature('Race - Other')
-
 
 
 
