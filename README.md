@@ -85,7 +85,7 @@ We eventually generated a (5372 * 134) dataframe with 5372 patients and 134 feat
    The correlation coefficient between predicted and real Progression Rate are 0.46 and 0.65 for 
    cross validation data and test data, respectively.
    <p align="center">
-   <img src="Figure/CrossValTrainDataPrediction.png" width="80%"/>
+   <img src="Figure/CrossValTrainDataPrediction.png" width="70%"/>
    </p>
    
    <p align="center">
