@@ -96,9 +96,10 @@ In the whole analysis, we applied Pandas Dataframe and grouped all noisy data by
    </p>
    
    
-## IV. Looking Forward
+## IV. Summary and Looking Forward
 1. Clinical data, esp. for rare disease like ALS, are extremely noisy with many missing data.
 2. Random Forest is optimal for study non-linear features in high-dimentional data.
 3. Open door to new predictive features like blood pressure, pulse and creatine kinase.
+4. Could help us reduce the clinical trial number for ALS patients.
 
 
