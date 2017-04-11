@@ -1,6 +1,8 @@
 import pandas as pd
 import numpy as np
 
+
+Figure
 df = pd.read_csv("/Users/Guang/Downloads/PRO-ACT/team1/5million.txt",header=None,names=['first'])
 df=df['first'].str.split('|', 6, expand=True)
 
