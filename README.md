@@ -44,7 +44,12 @@ In the whole analysis, we applied Pandas Dataframe and grouped all noisy data by
 
 
 ## II. Feature Engineering & Data Cleaning
-a. Progression rate picture:
+a. Progression rate picture:   
+   <p align="center">
+   <img src="Figure/ALSProgressionpng.png" width="100%"/>
+   </p>
+
+
 b. Covert time-dependent dynamic features into static:
    Derive least squares polynomial fit, and use k,b as new static feature.
    In case data points are too few for fit, we also reserve Max() and Min() as new feature.
@@ -63,17 +68,29 @@ We eventually generated a (5372 * 134) dataframe with 5372 patients and 134 feat
    Some features are highly correlated, for example, Sodium and Chloride concentration, 
    also ALT(SGPT) and AST(SGOT),two aminotransferases enzymes.
    Some correlated features are interesting, such as platelets count and pulse.
-   Figure????
+   
+   <p align="center">
+   <img src="Figure/FeatureCorrelation.png" width="100%"/>
+   </p>
 
 2. RandomForestRegressor 
    We applied RandomForestRegressor to train data. And from this model, the top important features
    include Onset delta, systolic blood pressure, pulse, Sodium and creatine kinase.
-   important feature figures?????
+   <p align="center">
+   <img src="Figure/FeatureImportance.png" width="100%"/>
+   </p>
+
 
 3. Prediction using Cross-Validated and test data
    The correlation coefficient between predicted and real Progression Rate are 0.46 and 0.65 for 
    cross validation data and test data, respectively.
-   two figures?????
+   <p align="center">
+   <img src="Figure/CrossValTrainDataPrediction.png" width="100%"/>
+   </p>
+   
+   <p align="center">
+   <img src="Figure/TestDataPrediction.png" width="100%"/>
+   </p>
    
    
 ## IV. Discussion
@@ -85,8 +102,20 @@ We eventually generated a (5372 * 134) dataframe with 5372 patients and 134 feat
 ## V. Figures
 
 <p align="center">
-  <img src="Figure/CrossValTrainDataPrediction.png" width="350"/>
-  <img src="../Figure/CrossValTrainDataPrediction.png" width="350"/>
+  <img src="Figure/CrossValTrainDataPrediction.png" width="100%"/>
+</p>
+
+<p align="center">
+  <img src="Figure/CrossValTrainDataPrediction.png" width="100%"/>
+</p>
+
+
+<p align="center">
+  <img src="Figure/CrossValTrainDataPrediction.png" width="100%"/>
+</p>
+
+<p align="center">
+  <img src="Figure/CrossValTrainDataPrediction.png" width="100%"/>
 </p>
 
 
