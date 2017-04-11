@@ -63,7 +63,7 @@ In the whole analysis, we applied Pandas Dataframe and grouped all noisy data by
 
 
 
-## III. Model Selection: Random Forest training
+## III. Model Selection: Random Forest Regression
 1. Feature correlation
    Some features are highly correlated, for example, Sodium and Chloride concentration, 
    also ALT(SGPT) and AST(SGOT),two aminotransferases enzymes.
