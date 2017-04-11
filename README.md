@@ -1,4 +1,4 @@
-ALS (Amyotrophic Lateral Sclerosis) is a fatal motor neuron disease with substantial heterogeneity in genomics as well as clinical features. ALS is usually very progressive with very short survival after onset. Here we applied machine learning approaches to predict rate of progression based on available clinical data for ~5000 patients.
+ALS (Amyotrophic Lateral Sclerosis) is 
 
 
 ##     Pipeline 
@@ -76,19 +76,12 @@ c.Open door to new predictive features like blood pressure, pulse and creatine k
 
 
 
-# D3: Data-Driven Documents
+# ALS Data Trend Project
 
 <a href="https://d3js.org"><img src="https://d3js.org/logo.svg" align="left" hspace="10" vspace="6"></a>
 
-**D3** (or **D3.js**) is a JavaScript library for visualizing data using web standards. D3 helps you bring data to life using SVG, Canvas and HTML. D3 combines powerful visualization and interaction techniques with a data-driven approach to DOM manipulation, giving you the full capabilities of modern browsers and the freedom to design the right visual interface for your data.
+**ALS** (i.e **Amyotrophic Lateral Sclerosis**) is a fatal motor neuron disease with substantial heterogeneity in genomics as well as clinical features. ALS is usually very progressive with very short survival after onset. Here we applied machine learning approaches to predict rate of progression based on available clinical data for ~5000 patients.
 
-## Resources
-
-* [API Reference](https://github.com/d3/d3/blob/master/API.md)
-* [Release Notes](https://github.com/d3/d3/releases)
-* [Gallery](https://github.com/d3/d3/wiki/Gallery)
-* [Examples](http://bl.ocks.org/mbostock)
-* [Wiki](https://github.com/d3/d3/wiki)
 
 ## Installing
 
@@ -133,5 +126,10 @@ You can also require individual modules and combine them into a `d3` object usin
 ```js
 var d3 = Object.assign({}, require("d3-format"), require("d3-geo"), require("d3-geo-projection"));
 ```
+
+
+
+
+a fatal motor neuron disease with substantial heterogeneity in genomics as well as clinical features. ALS is usually very progressive with very short survival after onset. Here we applied machine learning approaches to predict rate of progression based on available clinical data for ~5000 patients.
 
 
