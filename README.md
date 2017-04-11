@@ -1,4 +1,4 @@
-# ALS Data Trend Project
+# ALS Progression Prediction Project
 
 <a href=""><img src="https://upload.wikimedia.org/wikipedia/en/e/ef/ALS_Association_logo.gif" align="left" hspace="10" vspace="6"></a>
 
