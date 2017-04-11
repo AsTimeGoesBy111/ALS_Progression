@@ -77,7 +77,7 @@ We eventually generated a (5372 * 134) dataframe with 5372 patients and 134 feat
    We applied RandomForestRegressor to train data. And from this model, the top important features
    include Onset delta, systolic blood pressure, pulse, Sodium and creatine kinase.
    <p align="center">
-   <img src="Figure/FeatureImportance.png" height="50%" width="60%"/>
+   <img src="Figure/FeatureImportance.png" height="300" width="500"/>
    </p>
 
 
