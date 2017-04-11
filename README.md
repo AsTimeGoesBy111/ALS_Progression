@@ -34,7 +34,8 @@ We have ~5000000 lines of data about all features including demographics, clinic
 
 # Analysis
 
-## 1. Features include Static Feature (sex, age) and Dynamic Feature(Sodium concentration change over time).
+## 1. Features Overview 
+Features include Static Feature (sex, age) and Dynamic Feature(Sodium concentration change over time).
 Dynamic feature. Our target variable Progression Rate is also dynamic (Delta Health score/Delta time).
 Clinically Progression Rate (PR) is very important feature for ALS patients, so our purpose here is to 
 predict PR based on available patient features.
@@ -42,7 +43,7 @@ In the whole analysis, we applied Pandas Dataframe and grouped all noisy data by
 
 
 
-## 2. Feature engineering and Data cleaning
+## 2. Feature Engineering & Data Cleaning
 a. Progression rate picture:
 b. Covert time-dependent dynamic features into static:
    Derive least squares polynomial fit, and use k,b as new static feature.
