@@ -44,7 +44,7 @@ In the whole analysis, we applied Pandas Dataframe and grouped all noisy data by
 
 
 ## II. Feature Engineering & Data Cleaning
-1. Progression rate picture:   
+1. Progression rate figure:   
    <p align="center">
    <img src="Figure/ALSProgressionpng.png" width="80%"/>
    </p>
