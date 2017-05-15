@@ -19,18 +19,18 @@ predict PR based on available patient features.<br>
 
 ```python
 
-89	144	Demographics	B17A1C73-0A2B-4091-842C-D5841EF339FD	1205	Sex	Male 
-329	144	Demographics	704CA13F-C1FA-49EC-A3BB-E6B00FA075FA	1205	Sex	Female 
-329	144	Demographics	704CA13F-C1FA-49EC-A3BB-E6B00FA075FA	1206	Race - American Indian/Alaska Native
-329	144	Demographics	704CA13F-C1FA-49EC-A3BB-E6B00FA075FA	1207	Race - Asian
-329	145	ALSFRS(R)	8F97FE2C-5B03-4491-AA3E-52883C47FCE6	1225	ALSFRS Delta	189 
-329	145	ALSFRS(R)	8F97FE2C-5B03-4491-AA3E-52883C47FCE6	1228	ALSFRS Total	25  
-329	145	ALSFRS(R)	31D06255-09B0-4265-9477-D872DC6DD78A	1225	ALSFRS Delta	212 
-329	145	ALSFRS(R)	31D06255-09B0-4265-9477-D872DC6DD78A	1228	ALSFRS Total	30 
-329	146	Laboratory Data	1150FF83-DA3B-436E-B444-D1CA2A22E08C	1234	Laboratory Delta	0 
-329	146	Laboratory Data	1150FF83-DA3B-436E-B444-D1CA2A22E08C	1250	Test Name	Sodium  
-329	146	Laboratory Data	1150FF83-DA3B-436E-B444-D1CA2A22E08C	1251	Test Result	138     
-329	146	Laboratory Data	1150FF83-DA3B-436E-B444-D1CA2A22E08C	1252	Test Unit	mmol/L  
+89		Demographics	Sex	Male 
+329	Demographics 	Sex	Female 
+329	Demographics	Race - American Indian/Alaska Native
+329	Demographics	Race - Asian
+329	ALSFRS(R)		ALSFRS Delta	189 
+329	ALSFRS(R)		ALSFRS Total	25  
+329	ALSFRS(R)		ALSFRS Delta	212 
+329	ALSFRS(R)	   ALSFRS Total	30 
+329	Laboratory Data	Laboratory Delta	0 
+329	Laboratory Data	Test Name	Sodium  
+329	Laboratory Data	Test Result	138     
+329	Laboratory Data	Test Unit	mmol/L  
 
 ```
 
