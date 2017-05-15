@@ -19,18 +19,18 @@ predict PR based on available patient features.<br>
 
 ```python
 
- 89	Demographics	Sex	Male 
-329	Demographics 	Sex	Female 
-329	Demographics	Race  American Indian/Alaska Native
-329	Demographics	Race  Asian
-329	ALSFRS(R)	ALSFRS_Delta	189 
-329	ALSFRS(R)	ALSFRS_Total	25  
-329	ALSFRS(R)	ALSFRS_Delta	212 
-329	ALSFRS(R)	ALSFRS_Total	30 
-329	LaboratoryData	LaboratoryDelta	0 
-329	LaboratoryData	TestName	Sodium  
-329	LaboratoryData	TestResult	138     
-329	LaboratoryData	TestUnit	mmol/L  
+ 89	Demographics	Sex	         Male 
+329	Demographics 	Sex	         Female 
+329	Demographics	Race             American Indian
+329	Demographics	Race             Asian
+329	ALSFRS(R)	ALSFRS_Delta	 189 
+329	ALSFRS(R)	ALSFRS_Total	 25  
+329	ALSFRS(R)	ALSFRS_Delta	 212 
+329	ALSFRS(R)	ALSFRS_Total	 30 
+329	LaboratoryData	LaboratoryDelta  100 
+329	LaboratoryData	TestName	 Sodium  
+329	LaboratoryData	TestResult	 138     
+329	LaboratoryData	TestUnit	 mmol/L  
 
 ```
 
