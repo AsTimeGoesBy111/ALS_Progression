@@ -17,7 +17,7 @@ predict PR based on available patient features.<br>
 
 # Data Snippet
 
-```
+```python
 
 89	144	Demographics	B17A1C73-0A2B-4091-842C-D5841EF339FD	1205	Sex	Male 
 329	144	Demographics	704CA13F-C1FA-49EC-A3BB-E6B00FA075FA	1205	Sex	Female 
