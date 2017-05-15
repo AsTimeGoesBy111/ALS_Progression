@@ -21,16 +21,16 @@ predict PR based on available patient features.<br>
 
  89	Demographics	Sex	Male 
 329	Demographics 	Sex	Female 
-329	Demographics	Race - American Indian/Alaska Native
-329	Demographics	Race - Asian
-329	ALSFRS(R)	ALSFRS Delta	189 
-329	ALSFRS(R)	ALSFRS Total	25  
-329	ALSFRS(R)	ALSFRS Delta	212 
-329	ALSFRS(R)	ALSFRS Total	30 
+329	Demographics	Race  American Indian/Alaska Native
+329	Demographics	Race  Asian
+329	ALSFRS(R)	ALSFRS_Delta	189 
+329	ALSFRS(R)	ALSFRS_Total	25  
+329	ALSFRS(R)	ALSFRS_Delta	212 
+329	ALSFRS(R)	ALSFRS_Total	30 
 329	LaboratoryData	LaboratoryDelta	0 
-329	LaboratoryData	Test Name	Sodium  
-329	LaboratoryData	Test Result	138     
-329	LaboratoryData	Test Unit	mmol/L  
+329	LaboratoryData	TestName	Sodium  
+329	LaboratoryData	TestResult	138     
+329	LaboratoryData	TestUnit	mmol/L  
 
 ```
 
