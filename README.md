@@ -56,7 +56,7 @@ Features include Static Feature (sex, age) and Dynamic Feature(Sodium concentrat
 
 6. Plot for gender and age distribution.
    <p align="center">
-   <img src="GenderAge.png" width="70%"/>
+   <img src="GenderAge.png" width="60%"/>
    </p>
 7. Plot for ALS progression.  
    <p align="center">
