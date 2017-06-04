@@ -64,7 +64,7 @@ Features include Static Feature (sex, age) and Dynamic Feature(Sodium concentrat
    Some correlated features are interesting, such as platelets count and pulse.
    
    <p align="center">
-   <img src="Figure/FeatureCorrelation.png" width="70%"/>
+   <img src="CorrelationPlot.png" width="70%"/>
    </p>
 
 2. RandomForestRegressor 
