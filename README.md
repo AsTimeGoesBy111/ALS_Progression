@@ -65,7 +65,7 @@ Features include Static Feature (sex, age) and Dynamic Feature(Sodium concentrat
    
 8. Plot for association between features and progression.
    <p align="center">
-   <img src="FeatureAssociation.png" width="70%"/>
+   <img src="FeatureAssociation.png" width="100%"/>
    </p>
    
 
