@@ -86,7 +86,7 @@ Features include Static Feature (sex, age) and Dynamic Feature(Sodium concentrat
    We applied RandomForestRegressor to train data. And from this model, the top important predictive features
    include Onset delta, systolic blood pressure, pulse, Sodium and creatine kinase.
    <p align="center">
-   <img src="Figure/wordle.png" height="300" width="300"/>
+   <img src="Figure/wordle.png" height="250" width="250"/>
    </p>
 
 
@@ -95,11 +95,11 @@ Features include Static Feature (sex, age) and Dynamic Feature(Sodium concentrat
    The correlation coefficient between predicted and real Progression Rate are 0.46 and 0.65 for 
    cross validation data and test data, respectively.
    <p align="center">
-   <img src="Figure/CrossValPre.png" width="70%"/>
+   <img src="Figure/CrossValPre.png" width="60%"/>
    </p>
    
    <p align="center">
-   <img src="TestDataPre.png" width="70%"/>
+   <img src="TestDataPre.png" width="60%"/>
    </p>
    
    
