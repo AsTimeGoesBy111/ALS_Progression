@@ -72,7 +72,7 @@ Features include Static Feature (sex, age) and Dynamic Feature(Sodium concentrat
    We applied RandomForestRegressor to train data. And from this model, the top important predictive features
    include Onset delta, systolic blood pressure, pulse, Sodium and creatine kinase.
    <p align="center">
-   <img src="Figure/FeatureImportance.png" height="400" width="700"/>
+   <img src="Figure/wordle.png" height="300" width="300"/>
    </p>
 
 
