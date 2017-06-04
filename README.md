@@ -54,6 +54,20 @@ Features include Static Feature (sex, age) and Dynamic Feature(Sodium concentrat
 
 5. We eventually generated a (5372 * 134) dataframe with 5372 patients and 134 features.
 
+6. Plot for gender and age distribution.
+   <p align="center">
+   <img src="GenderAge.png" width="70%"/>
+   </p>
+7. Plot for ALS progression.  
+   <p align="center">
+   <img src="ProgressionPlot.png" width="70%"/>
+   </p>
+   
+8. Plot for association between features and progression.
+   <p align="center">
+   <img src="FeatureAssociation.png" width="70%"/>
+   </p>
+   
 
 
 ## III. Model Selection: Random Forest Regression
