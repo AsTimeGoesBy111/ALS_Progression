@@ -81,11 +81,11 @@ Features include Static Feature (sex, age) and Dynamic Feature(Sodium concentrat
    The correlation coefficient between predicted and real Progression Rate are 0.46 and 0.65 for 
    cross validation data and test data, respectively.
    <p align="center">
-   <img src="Figure/CrossValTrainDataPrediction.png" width="70%"/>
+   <img src="Figure/CrossValPre.png" width="70%"/>
    </p>
    
    <p align="center">
-   <img src="Figure/TestDataPrediction.png" width="70%"/>
+   <img src="TestDataPre.png" width="70%"/>
    </p>
    
    
