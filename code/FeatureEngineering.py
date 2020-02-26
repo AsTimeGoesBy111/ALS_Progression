@@ -1,7 +1,6 @@
 import pandas as pd
 import numpy as np
 
-# dklsls
 def Staticfeature(staticfeature):
     arr=df[(df.iloc[:, 5] == staticfeature)].index.values
     
